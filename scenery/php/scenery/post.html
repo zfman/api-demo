@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h3,form{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<h3>注册</h3>
+<form action="index.php?c=User&a=register" method="post">
+    昵称：<input type="text" name="name"><br><br>
+    账号：<input type="text" name="tel"><br><br>
+    密码：<input type="text" name="passwd"><br><br>
+    <input type="submit" value="注册"><br><br>
+</form>
+<hr/>
+
+<h3>登录</h3>
+    <form action="index.php?c=User&a=login" method="post">
+        账号：<input type="text" name="tel"><br><br>
+        密码：<input type="text" name="passwd"><br><br>
+        <input type="submit" value="登录"><br><br>
+    </form>
+<hr/>
+
+<h3>获取个人资料</h3>
+<form action="index.php?c=User&a=info" method="post"
+      enctype="multipart/form-data">
+    <input type="submit" name="submit" value="获取个人资料" />
+</form>
+<hr/>
+
+<h3>修改昵称</h3>
+<form action="index.php?c=User&a=username" method="post"
+      enctype="multipart/form-data">
+    新昵称：<input type="text" name="username"><br><br>
+    <input type="submit" name="submit" value="修改昵称" />
+</form>
+<hr/>
+
+<h3>修改密码</h3>
+<form action="index.php?c=User&a=passwd" method="post"
+      enctype="multipart/form-data">
+    新密码：<input type="text" name="passwd"><br><br>
+    <input type="submit" name="submit" value="修改密码" />
+</form>
+<hr/>
+
+<h3>注销</h3>
+<form action="index.php?c=User&a=logout" method="post"
+      enctype="multipart/form-data">
+    <input type="submit" name="submit" value="注销账号" />
+</form>
+<hr/>
+
+<h3>查询用户</h3>
+<form action="index.php?c=User&a=query" method="post">
+    关键字：<input type="text" name="value"><br><br>
+    <input type="submit" value="查询"><br><br>
+</form>
+<hr/>
+
+<h3>查询好友</h3>
+<form action="index.php?c=Friend&a=query" method="post">
+    <input type="submit" value="查询"><br><br>
+</form>
+<hr/>
+
+<h3>添加好友</h3>
+<form action="index.php?c=Friend&a=add" method="post">
+    uid：<input type="text" name="target"><br><br>
+    <input type="submit" value="添加"><br><br>
+</form>
+<hr/>
+
+<h3>删除好友</h3>
+<form action="index.php?c=Friend&a=delete" method="post">
+    fid：<input type="text" name="fid"><br><br>
+    <input type="submit" value="删除"><br><br>
+</form>
+<hr/>
+
+<h3>上传图片</h3>
+<form action="index.php?c=Scenery&a=upload" method="post"
+      enctype="multipart/form-data">
+    <label for="file">Filename:</label>
+    <input type="file" name="file" id="file" />
+    <br />
+    <input type="submit" name="submit" value="上传" />
+</form>
+<hr/>
+
+<h3>发布Scenery</h3>
+<form action="index.php?c=Scenery&a=publish" method="post"
+      enctype="multipart/form-data">
+    article：<input type="text" name="article"><br><br>
+    longitude：<input type="text" name="longitude"><br><br>
+    latitude：<input type="text" name="latitude"><br><br>
+    location：<input type="text" name="location"><br><br>
+    <input type="submit" name="submit" value="发布" />
+</form>
+<hr/>
+
+<h3>查询发布的Scenery</h3>
+<form action="index.php?c=Scenery&a=query" method="post"
+      enctype="multipart/form-data">
+    <input type="submit" name="submit" value="查询" />
+</form>
+<hr/>
+
+<h3>删除Scenery</h3>
+<form action="index.php?c=Scenery&a=delete" method="post"
+      enctype="multipart/form-data">
+    sid：<input type="text" name="sid"><br><br>
+    <input type="submit" name="submit" value="删除" />
+</form>
+<hr/>
+
+<h3>所有的Scenery</h3>
+<form action="index.php?c=Scenery&a=all" method="post"
+      enctype="multipart/form-data">
+    <input type="submit" name="submit" value="查询" />
+</form>
+<hr/>
+
+<h3>收藏Scenery</h3>
+<form action="index.php?c=Collect&a=collect" method="post"
+      enctype="multipart/form-data">
+    sid：<input type="text" name="sid"><br><br>
+    <input type="submit" name="submit" value="收藏" />
+</form>
+<hr/>
+
+<h3>我的收藏</h3>
+<form action="index.php?c=Collect&a=query" method="post"
+      enctype="multipart/form-data">
+    <input type="submit" name="submit" value="我的收藏" />
+</form>
+<hr/>
+
+<h3>取消收藏Scenery</h3>
+<form action="index.php?c=Collect&a=cancel" method="post"
+      enctype="multipart/form-data">
+    cid：<input type="text" name="cid"><br><br>
+    <input type="submit" name="submit" value="取消收藏" />
+</form>
+<hr/>
+
+</body>
+</html>
