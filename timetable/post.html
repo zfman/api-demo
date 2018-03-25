@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h3,form{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<h3>根据专业名称搜索</h3>
+<form action="index.php?c=Timetable&a=getByMajor" method="post">
+    专业名称：<input type="text" name="major"><br><br>
+    <input type="submit" value="查询"><br><br>
+</form>
+<hr/>
+
+<h3>根据专业关键字搜索相关专业</h3>
+    <form action="index.php?c=Timetable&a=findMajor" method="post">
+        专业的关键字：<input type="text" name="major"><br><br>
+        <input type="submit" value="查询"><br><br>
+    </form>
+<hr/>
+
+<h3>根据课程名关键字搜索</h3>
+<form action="index.php?c=Timetable&a=getByName" method="post">
+    课程名关键字：<input type="text" name="name"><br><br>
+    <input type="submit" value="查询"><br><br>
+</form>
+<hr/>
+
+<h3>存储</h3>
+<form action="index.php?c=Timetable&a=putValue" method="post">
+    内容：<input type="text" name="value"><br><br>
+    <input type="submit" value="提交"><br><br>
+</form>
+<hr/>
+
+<h3>提取内容</h3>
+<form action="index.php?c=Timetable&a=getValue" method="post">
+    内容ID：<input type="text" name="id"><br><br>
+    <input type="submit" value="查询"><br><br>
+</form>
+<hr/>
+</body>
+</html>
