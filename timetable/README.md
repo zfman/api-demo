@@ -6,8 +6,6 @@
 - 蹭课功能
 - 分享课程
 - 扫码导入
-- 课程管理
-- 课程库管理
 - 无需账号登录
 
 ### 提示
@@ -15,7 +13,8 @@
 	所以使用API时要加上一个基地址`http://www.liuzhuangfei.com/timetable/`
 - 下列API的参数请求均为POST方式
 - 状态码只需要知道200为成功即可，其他状态时只需要Toast msg的内容即可
-- 数据库结构可以参考extras文件夹下的timetable.sql，建立一个名为timetable的数据库，导入该文件即可.
+- 各个接口的测试页面为`http://www.liuzhuangfei.com/timetable/post.html`,如果返回结果与以下示例有出入，以测试页面结果为准
+- 如果想将项目部署在自己的服务器上，要导入数据库结构，数据库是extras文件夹下的timetable.sql文件，建立一个名为timetable的数据库，导入该文件即可.
 
 ### API
 
@@ -61,6 +60,7 @@ Return Example:（参数 name:计算机在化学）
 
 
 **3.存储**
+
 本接口可以用于课表扫码导入的功能，当分享课程时，可以将数据存储到数据库，将返回的id生成二维码，当导入时只需要根据该id提取数据即可
 ```java
 Url:
