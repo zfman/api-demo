@@ -1,5 +1,5 @@
-# HpuTimetableAPI
-[HPU课表]软件的后台对外开放接口
+# 河南理工大学课程库API
+河南理工大学课程表对外开放接口，本数据基于河南理工大学官网公示的课程Excel表格，作者使用脚本将其录入到个人数据库中，现在开放出来，以供移动开发者交流学习使用
 
 - 收录了河南理工大学2017-2018第二学期的全校课程库
 - 23个学院、901个班级、5647个课程、20241条课程记录
@@ -7,6 +7,13 @@
 - 分享课程
 - 扫码导入
 - 无需账号登录
+
+### Resource
+- [文章 : 河南理工大学课程库API](https://blog.csdn.net/lzhuangfei/article/details/79946997)
+- [文章 : 一起实现一个健壮的课程表控件](https://blog.csdn.net/lzhuangfei/article/details/78243745)
+- [课表控件 : TimetableView](https://github.com/zfman/TimetableView)
+
+如果喜欢这些项目，就去点个`star`收藏一下吧~~
 
 ### 提示
 - 下列接口中的请求地址不是完整的请求地址，API服务已部署在我的服务器上。
