@@ -4,9 +4,9 @@
 
 ### 提示
 - 下列接口中的请求地址不是完整的请求地址，API服务已部署在我的服务器上。
-	所以使用API时要加上一个基地址`http://119.29.190.39/scenery/`，如登录API：
+	所以使用API时要加上一个基地址`http://www.liuzhuangfei.com/scenery/`，如登录API：
 	```java
-	http://119.29.190.39/scenery/index.php?c=User&a=login
+	http://www.liuzhuangfei.com/scenery/index.php?c=User&a=login
 	```
 - 下列API的参数请求均为POST方式，未指定的参数类型均为String，返回值类型均为String
 - 状态码只需要知道200为成功即可，其他状态时只需要Toast msg的内容即可
