@@ -8,6 +8,9 @@
 	```java
 	http://www.liuzhuangfei.com/scenery/index.php?c=User&a=login
 	```
+- 以下的接口的返回值可能不是最新的，如果与实际返回值不同，以实际返回值为主,你可以在以下地址页面测试：
+[http://www.liuzhuangfei.com/scenery/post.html](http://www.liuzhuangfei.com/scenery/post.html)
+- 先登录，每次请求其他接口时需要携带cookie，cookie是有过期时间的
 - 下列API的参数请求均为POST方式，未指定的参数类型均为String，返回值类型均为String
 - 状态码只需要知道200为成功即可，其他状态时只需要Toast msg的内容即可
 - 数据库结构可以参考sql文件夹下的scenery.sql，建立一个名为scenery的数据库，导入该文件即可.
